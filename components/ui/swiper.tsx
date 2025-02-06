@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+//import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide, SwiperProps } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 
 //images
@@ -16,8 +16,8 @@ import featured8 from "@/public/images/featured/logo-bdwd.png";
 import featured9 from "@/public/images/featured/upwork-logo.svg";
 
 //arrows
-import { Navigate_left } from "./custom navigations/nav-left";
-import { Navigate_right } from "./custom navigations/nav-right";
+// import { Navigate_left } from "./custom navigations/nav-left";
+// import { Navigate_right } from "./custom navigations/nav-right";
 import { Navigation } from "swiper/modules";
 
 const featured = [

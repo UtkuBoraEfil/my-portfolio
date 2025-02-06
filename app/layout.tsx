@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`cn(inter.className) bg-[rgb(26,25,29)] text-white`}>{children}</body>
+      <body className={cn(`${inter.className} bg-[rgb(26,25,29)] text-white`)}>{children}</body>
     </html>
   );
 }

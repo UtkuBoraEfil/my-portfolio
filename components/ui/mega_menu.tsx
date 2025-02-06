@@ -41,8 +41,8 @@ export function Menu() {
               <p className="text-[10px] text-right leading-none opacity-50">
                 0{item.id}
               </p>
-              <p className=" ">// {item.title}</p>
-            </a>
+                <p className=" ">{`// ${item.title}`}</p>
+              </a>
           </li>
         ))}
       </ul>
