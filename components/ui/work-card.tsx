@@ -1,8 +1,10 @@
 import { StaticImageData } from "next/image";
 import { spaceGrotesk } from "@/app/fonts";
 import Image from "next/image";
+import { Key } from "lucide-react";
 
 interface WorkCardProps {
+  keynum: number;
   title: string;
   image: StaticImageData;
   category: string;
@@ -10,6 +12,7 @@ interface WorkCardProps {
 }
 
 export function Work_Card({
+  keynum,
   title,
   image,
   category,
@@ -18,8 +21,8 @@ export function Work_Card({
   return (
     <>
       {card_design === "type1" ? (
-        <div className="rounded-[5px] max-w-[380px]   overflow-hidden">
-          <Image src={image} alt={title} width={380} height={285} />
+        <div className={`rounded-[5px]   overflow-hidden row-span-${keynum === 0 ? 2 : 3} col-span-1`}>
+          <Image src={image} alt={title} width={380} height={285} className="w-full" />
           <div className="work-card-bg p-12">
             <h2
               className={`whitespace-nowrap overflow-hidden text-ellipsis leading-tight mb-[5px] text-2xl ${spaceGrotesk.className} font-bold`}
@@ -30,9 +33,9 @@ export function Work_Card({
           </div>
         </div>
       ) : (
-        <div className="rounded-[5px] w-2/3    overflow-hidden">
+        <div className="rounded-[5px] col-span-2 row-span-2 w-full h-full   overflow-hidden">
           <Image
-            className="w-full h-full"
+            className="w-full "
             src={image}
             alt={title}
             width={380}

@@ -3,12 +3,14 @@ import { Work_Card } from "@/components/ui/work-card";
 import img1 from "@/public/images/temp-works/ailabgranada.com-poster.jpg";
 import img2 from "@/public/images/temp-works/all-the-roads-of-chittagong-cover.jpg";
 import img3 from "@/public/images/temp-works/flighlocal-cover-image.jpg";
-import img4 from "@/public/images/temp-works/kananaskis-nordic-spa-poster.jpg";
+import img4 from "@/public/images/temp-works/tryotel_ios_mockup-scaled.jpg";
 import img5 from "@/public/images/temp-works/khora-urban-thinkers-poster-r.jpg";
 import img6 from "@/public/images/temp-works/tapy-co-poster (1).jpg";
 import img7 from "@/public/images/temp-works/tryotel-b2c-cover.jpg";
-import img8 from "@/public/images/temp-works/tryotel_ios_mockup-scaled.jpg";
+import img8 from "@/public/images/temp-works/kananaskis-nordic-spa-poster.jpg";
 import img9 from "@/public/images/temp-works/ailabgranada.com-poster.jpg";
+
+
 
 
 
@@ -71,11 +73,30 @@ export function MyWorks () {
   }
 ]
 
+let numOfRows = 0;
+let cardsWithDesign1 = 0;
+
+works.map((work) => {
+  if (work.card_design === "type1") {
+    if(cardsWithDesign1 === 3){
+    numOfRows += 1;
+    cardsWithDesign1 = 0;
+    }
+    cardsWithDesign1++;
+  }
+  else{
+    numOfRows += 2;
+    cardsWithDesign1-=2;
+  }
+});
+
+console.log(numOfRows);
+
   return (
     <div>
-      <div className="flex justify-between items-center max-w-[1260px] mx-auto flex-wrap gap-5 ">
+      <div className={`grid grid-cols-3 grid-rows-${numOfRows*2} max-w-[1260px] mx-auto gap-5`}>
         {works.map((work, index) => (
-         <Work_Card key={index} title={work.title} image={work.image} category={work.category} card_design={work.card_design}/>
+         <Work_Card key={index} keynum={index} title={work.title} image={work.image} category={work.category} card_design={work.card_design}/>
         ))}
       </div>
       
