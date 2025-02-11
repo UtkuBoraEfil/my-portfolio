@@ -1,13 +1,104 @@
+import { ReactIcon } from "@/components/icons/react";
+import { Monitor } from "@/components/icons/monitor";
+import { Figma } from "lucide-react";
+import { Roboto_Mono } from "next/font/google";
+import HelloWorld from "@/public/images/hello-world.webp";
+import Image from "next/image";
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
 export function Expertise() {
   return (
-    <div className="px-[50px] pt-32">
-      <h1 className=" text-7xl font-semibold text-center pb-8">My Expertise</h1>
-      <div className="flex">
-        <div>
-          
+    <>
+      <h1 className=" text-7xl font-semibold text-center pb-10">
+        My Expertise
+      </h1>
+      <div className="flex w-full justify-center max-w-[1100px] mx-auto ">
+        <div className="px-8 py-10 flex-1 w-full border-[3px] min-h-7 border-solid border-r-[1.5px] border-[#a3a3a3] text-[26px]  leading-[1.2em]">
+          <div className="flex gap-6 ">
+            <Monitor />
+            <h2 className="font-semibold inline-block align-top">
+              <span className="z-10 relative underline-red">Software</span>
+              <br />
+              Development
+            </h2>
+          </div>
+          <h3
+            className={`text-sm opacity-30 ${robotoMono.className}`}
+          >{`<h3>`}</h3>
+          <div className="pl-[15px] py-1">
+            <h2
+              className={`${robotoMono.className} font-normal leading-6 pl-3 text-base border-l-2 border-white border-opacity-30 `}
+            >
+              Experienced in both functional and OOP: Dart, Python, Java,
+              JavaScript, TypeScript.
+            </h2>
+          </div>
+          <h3
+            className={`text-sm opacity-30 ${robotoMono.className}`}
+          >{`</h3>`}</h3>
         </div>
-        
+        <div className="px-8 py-10 flex-1 w-full border-[3px] min-h-7 border-solid border-x-[1.5px] border-[#a3a3a3] text-[26px]  leading-[1.2em]">
+          <div className="flex gap-10">
+            <ReactIcon />
+            <h2 className="font-semibold inline-block align-top">
+              <span className="z-10 relative underline-blue">
+                Full-Stack Dev
+              </span>
+              <br />
+              React,NextJs
+            </h2>
+          </div>
+          <h3
+            className={`text-sm opacity-30 ${robotoMono.className}`}
+          >{`<h3>`}</h3>
+          <div className="pl-[15px] py-1">
+            <h2
+              className={`${robotoMono.className} font-normal leading-6 pl-3 text-base border-l-2 border-white border-opacity-30 `}
+            >
+              Over 2 years of development experience in HTML, CSS, JavaScript, React and NextJS frameworks.
+            </h2>
+          </div>
+          <h3
+            className={`text-sm opacity-30 ${robotoMono.className}`}
+          >{`</h3>`}</h3>
+        </div>
+        <div className="px-8 py-10 flex-1 w-full border-[3px] border-l-[1.5px] min-h-7 border-solid  border-[#a3a3a3] text-[26px]  leading-[1.2em]">
+          <div className="flex gap-10">
+            <Figma className="w-10 h-10 stroke-[1.2px]" />
+            <h2 className="font-semibold inline-block align-top">
+              <span className="z-10 relative underline-orange">UI/UX</span>
+              <br />
+              Figma
+            </h2>
+          </div>
+          <h3
+            className={`text-sm opacity-30 ${robotoMono.className}`}
+          >{`<h3>`}</h3>
+          <div className="pl-[15px] py-1">
+            <h2
+              className={`${robotoMono.className} font-normal leading-6 pl-3 text-base border-l-2 border-white border-opacity-30 `}
+            >
+              Passionate about UI/UX design with experience in creating user-friendly interfaces using Figma.
+            </h2>
+          </div>
+          <h3
+            className={`text-sm opacity-30 ${robotoMono.className}`}
+          >{`</h3>`}</h3>
+        </div>
       </div>
-    </div>
+      <div className="w-full  relative -top-10">
+        <Image
+          src={HelloWorld}
+          alt="Hello World"
+          width={582}
+          height={291}
+          className="opacity-20 mx-auto"
+          />
+      </div>
+    </>
   );
 }

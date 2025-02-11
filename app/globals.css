@@ -93,6 +93,44 @@ body {
   animation: left-to-right 2s ease-in-out forwards infinite alternate;
 }
 
+.underline-red::after{
+  transition: all 0.1s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 13.5%;
+  z-index: -1;
+  height: 0.3em;
+  width: 104%;
+  left: -1%;
+  background: linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%);
+}
+.underline-blue::after{
+  transition: all 0.1s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 13.5%;
+  z-index: -1;
+  height: 0.3em;
+  width: 104%;
+  left: -1%;
+  background: linear-gradient(65deg, #2C49D8 0%, #2C49D8 100%, rgba(255, 209, 0, 0) 100%);
+}
+.underline-orange::after{
+  transition: all 0.1s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 13.5%;
+  z-index: -1;
+  height: 0.3em;
+  width: 104%;
+  left: -1%;
+  background: linear-gradient(65deg, #FF6B2B 0%, #FF6B2B 100%, rgba(255, 209, 0, 0) 100%);
+}
+
+.work-card-bg{
+  background-color: rgba(136, 136, 136, .05);
+}
+
 
 @keyframes left-to-right{
   0%{
