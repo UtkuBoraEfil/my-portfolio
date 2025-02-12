@@ -76,7 +76,7 @@ export function MyWorks() {
   ];
 
   const works_right = [works[2], works[4], works[6], works[7], works[9], ];
-  const works_important = [works[3], works[5]];
+  // const works_important = [works[3], works[5]];
   const works_left = [
     works[0],
     works[1],

@@ -1,4 +1,3 @@
-import { Roboto_Mono } from "next/font/google";
 import { roboto } from "@/app/fonts";
 
 
