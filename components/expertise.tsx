@@ -16,7 +16,7 @@ export function Expertise() {
       <h1 className=" text-7xl font-semibold text-center pb-10">
         My Expertise
       </h1>
-      <div className="flex w-full justify-center max-w-[1100px] mx-auto ">
+      <div className="flex w-full justify-start max-w-[1100px] mx-auto ">
         <div className="px-8 py-10 flex-1 w-full border-[3px] min-h-7 border-solid border-r-[1.5px] border-[#a3a3a3] text-[26px]  leading-[1.2em]">
           <div className="flex gap-6 ">
             <Monitor />

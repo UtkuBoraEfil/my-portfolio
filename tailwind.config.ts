@@ -9,6 +9,11 @@ export default {
   ],
   theme: {
   	extend: {
+		screens: {
+			md: "900px",
+			lg: "1320px",
+			xl: "1700px",
+		  },
 		animation: {
 			scroll:
 			  "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
