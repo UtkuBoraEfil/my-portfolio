@@ -73,8 +73,10 @@ body {
 
 .bg-hero {
   background-image: url("/images/background_weird_boxes.jpg");
+}
 
-  
+.bg-profile{
+  background-image: url("/images/mark_portrait_circle.webp");
 }
 
 .bg-gradient-hero{
@@ -127,6 +129,26 @@ body {
   background: linear-gradient(65deg, #FF6B2B 0%, #FF6B2B 100%, rgba(255, 209, 0, 0) 100%);
 }
 
+.underline-purple::after{
+    transition: all 0.1sease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 13.5%;
+    z-index: -1;
+    height: 0.3em;
+    width: 104%;
+    left: -1%;
+    background: linear-gradient(65deg, #9440e8 0%, #9440e8 100%, rgba(255, 209, 0, 0) 100%);
+    transition: all 0.3s ease-in-out;
+    ;
+}
+
+.underline-purple:hover::after{
+  height: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
 .work-card-bg{
   background-color: rgba(136, 136, 136, .05);
 }
@@ -163,7 +185,7 @@ body {
 }
 
 .work-card-parent:hover .work-card-children{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
