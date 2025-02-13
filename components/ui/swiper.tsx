@@ -1,3 +1,4 @@
+"use client";
 //import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -52,11 +53,11 @@ export function MySwiper() {
         autoplay={{
           delay: 4000,
           disableOnInteraction: true,
-        }}  
+        }}
         modules={[Autoplay, Navigation]}
         className=" "
       >
-          {/* <Navigate_left />
+        {/* <Navigate_left />
           <Navigate_right /> */}
         <>
           {featured.map((referance, idx) => (
