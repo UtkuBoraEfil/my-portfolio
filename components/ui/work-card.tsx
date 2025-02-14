@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { spaceGrotesk } from "@/app/fonts";
 import Image from "next/image";
 interface WorkCardProps {
@@ -44,7 +43,7 @@ export function Work_Card({
         <div className="rounded-[5px] forworks:w-full w-[380px]  h-[436px] lg:!h-[674px]   overflow-hidden work-card-parent">
           <div className=" overflow-hidden">
             <Image
-              className="lg:w-full h-[285px] lg:h-auto work-rcard-children "
+              className="lg:w-full h-[285px] lg:h-auto work-card-children"
               src={image}
               alt={title}
               width={380}

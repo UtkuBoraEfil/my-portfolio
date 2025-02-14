@@ -1,15 +1,12 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "swiper/css";
-
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 const featured = [
   "/images/featured/WeAreDevelopers-logo.svg",
