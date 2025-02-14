@@ -16,7 +16,7 @@ export function Work_Card({
   return (
     <>
       {card_design === "type1" ? (
-        <div className="rounded-[5px] w-full max-w-[380px] max-h-[436px] overflow-hidden work-card-parent">
+        <div className="rounded-[5px]  max-w-[380px] max-h-[436px] overflow-hidden work-card-parent">
           <div className="h-[285px] overflow-hidden">
             <Image className="w-full h-full object-cover object-center work-card-children " src={image} alt={title} width={380} height={285} />
           </div>
@@ -31,10 +31,10 @@ export function Work_Card({
           </div>
         </div>
       ) : (
-        <div className="rounded-[5px] w-full  h-[436px] lg:!h-[674px]   overflow-hidden work-card-parent">
+        <div className="rounded-[5px] forworks:w-full w-[380px]  h-[436px] lg:!h-[674px]   overflow-hidden work-card-parent">
           <div className=" overflow-hidden">
             <Image
-              className="lg:w-full h-[285px] lg:h-auto work-card-children "
+              className="lg:w-full h-[285px] lg:h-auto work-rcard-children "
               src={image}
               alt={title}
               width={380}

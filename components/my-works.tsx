@@ -32,7 +32,7 @@ export function MyWorks() {
           </button>
         </div>
       </div>
-      <div className="flex justify-center   gap-10 ">
+      <div className=" flex flex-col forworks:flex-row items-center align-middle justify-center   gap-10 ">
         <div className="lg:flex-2/3   h-full">
           <div className="flex gap-10 flex-wrap flex-col lg:flex-row">
             {works_left.map((work, index) => (

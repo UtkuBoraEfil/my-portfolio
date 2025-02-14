@@ -24,14 +24,14 @@ export function ExperienceCard({
   return (
     <>
       <button
-        className={`bg-[#490C86DE] w-full h-full items-center flex justify-between py-4 px-5 font-semibold text-base rounded-md leading-none text-center transition-all duration-200 ${
+        className={`bg-[#490C86DE] w-full h-full items-center flex justify-between py-4 px-5 font-semibold text-sm md2:text-base rounded-md leading-none text-center transition-all duration-200 ${
           isActive ? "bg-[#740cdc]" : ""
         }`}
         onClick={onClick}
       >
         <h1>{experience.title}</h1>
         <div className="flex gap-10 items-center">
-          <h2>{experience.years}</h2>
+          <h2 className="hidden md2:block">{experience.years}</h2>
           {isActive ? <Minus size={20} /> : <Plus size={20} />}
         </div>
       </button>
@@ -54,7 +54,7 @@ export function ExperienceCard({
             />
             <a href={experience.website}>{experience.website}</a>
           </div>
-          <div className="w-full flex justify-between pt-5">
+          <div className="w-full flex flex-col-reverse md2:flex-row justify-between pt-5">
             <div>
               <p className="leading-6 opacity-85">{experience.description}</p>
               <div className="flex gap-2 mt-5">

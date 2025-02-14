@@ -15,7 +15,7 @@ export function Experience() {
   }
   return (
     <div className="mx-auto py-10 max-w-[750px] pt-40">
-      <h1 className="text-center text-6xl font-semibold">
+      <h1 className="text-center text-4xl md2:text-6xl font-semibold">
         Professional
         <br />
         Experience

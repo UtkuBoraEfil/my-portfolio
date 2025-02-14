@@ -10,7 +10,10 @@ export default {
   theme: {
   	extend: {
 		screens: {
-			md: "900px",
+			sm: "640px",
+			md2: "720px",
+			forworks: "800px",
+			md: "1000px",
 			lg: "1320px",
 			xl: "1700px",
 		  },

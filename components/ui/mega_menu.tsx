@@ -31,7 +31,7 @@ const menu_items = [
 export function Menu() {
   return (
     <nav className={`text-[17px] ${robotoMono.className}`}>
-      <ul className="flex group">
+      <ul className="md:flex group hidden ">
         {menu_items.map((item) => (
           <li
             className="group-hover:opacity-50 hover:!opacity-100 transition-opacity duration-300 ease"

@@ -10,7 +10,7 @@ export default function Home() {
     <div className="w-full h-screen ">
         <Hero/>
     </div>
-    <div className=" px-[50px] pt-32 pb-32 overflow-hidden">
+    <div className=" px-5 md2:px-[50px] pt-32 pb-32 overflow-hidden">
       <Expertise/>
       <MyWorks/>
       <Experience/>

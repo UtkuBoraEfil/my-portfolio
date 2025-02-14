@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <div className="flex w-full ">
+    <div className="flex w-full flex-col-reverse lg:flex-row">
       <div
-        className={`w-[45%] ${roboto.className} bg-[#0e0e0e] min-h-full flex flex-col py-20 `}
+        className={`lg:w-[45%] ${roboto.className} bg-[#0e0e0e] min-h-full flex flex-col py-20 px-8 `}
       >
         <div className="mx-auto max-w-[450px] flex flex-col justify-between gap-28">
           <div>
@@ -40,9 +40,9 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-[55%] min-h-full">
-        <div className="w-full flex h-full">
-          <div className="w-[45%] p-8 bg-[#bc60fb] min-h-full">
+      <div className="lg:w-[55%] min-h-full">
+        <div className="w-full flex flex-col sm:flex-row h-full">
+          <div className="sm:w-[45%] p-8 bg-[#bc60fb] min-h-full">
             <div className="flex justify-end relative">
               <Image
                 src={"/images/quote-icon.png"}
@@ -67,7 +67,7 @@ export function Footer() {
             <h2 className="text-lg font-semibold">- Arda Kaan Aydilek</h2>
             <p className="text-sm opacity-80">founder of speed-up youtube channel</p>
           </div>
-          <div className="w-[55%] h-full">
+          <div className="sm:w-[55%] min-h-full">
             <div className="w-full p-8 bg-[#0067dc]">
             <div className="flex justify-end relative">
               <Image
@@ -80,12 +80,12 @@ export function Footer() {
               <div className="rounded-full w-20 h-20 object-cover bg-center overflow-hidden border border-white bg-profile"></div>
             </div>
             <p className="py-10 opacity-80">
-              Utku kesinlikle HARIKA. Kendisiyle en sevdigim kuzenim olur. Muthis bir insan. Herkesin boyle bir kuzeni olmali.
+              Utku kesinlikle HARIKA. Kendisi en sevdigim kuzenim olur. Muthis bir insan. Herkesin boyle bir kuzeni olmali.
             </p>
             <h2 className="text-lg font-semibold">- Arda Kaan Aydilek</h2>
             <p className="text-sm opacity-80">founder of speed-up youtube channel</p>
             </div>
-            <div className="w-full p-8 bg-[#923fe6] ">
+            <div className="w-full min-h-full p-8 bg-[#923fe6] ">
             <div className="flex justify-end relative">
               <Image
                 src={"/images/quote-icon.png"}
