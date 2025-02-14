@@ -3,7 +3,7 @@ import { spaceGrotesk } from "@/app/fonts";
 import Image from "next/image";
 interface WorkCardProps {
   title: string;
-  image: StaticImageData;
+  image: string;
   category: string;
   card_design: string;
 }
@@ -18,7 +18,13 @@ export function Work_Card({
       {card_design === "type1" ? (
         <div className="rounded-[5px]  max-w-[380px] max-h-[436px] overflow-hidden work-card-parent">
           <div className="h-[285px] overflow-hidden">
-            <Image className="w-full h-full object-cover object-center work-card-children " src={image} alt={title} width={380} height={285} />
+            <Image
+              className="w-full h-full object-cover object-center work-card-children "
+              src={image}
+              alt={title}
+              width={380}
+              height={285}
+            />
           </div>
           <div className="work-card-bg p-12 h-full">
             <h2
@@ -26,8 +32,12 @@ export function Work_Card({
             >
               {title}
             </h2>
-            <h4 className="text-sm opacity-50 work-card-category ">{category}</h4>
-            <h4  className="text-sm opacity-50 work-card-show-project w-fit  ">Show Project</h4>
+            <h4 className="text-sm opacity-50 work-card-category ">
+              {category}
+            </h4>
+            <h4 className="text-sm opacity-50 work-card-show-project w-fit  ">
+              Show Project
+            </h4>
           </div>
         </div>
       ) : (
@@ -47,8 +57,12 @@ export function Work_Card({
             >
               {title}
             </h2>
-            <h4 className="text-sm opacity-50 work-card-category">{category}</h4>
-            <h4  className="text-sm opacity-50 work-card-show-project w-fit  ">Show Project</h4>
+            <h4 className="text-sm opacity-50 work-card-category">
+              {category}
+            </h4>
+            <h4 className="text-sm opacity-50 work-card-show-project w-fit  ">
+              Show Project
+            </h4>
           </div>
         </div>
       )}
